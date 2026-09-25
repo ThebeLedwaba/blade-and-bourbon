@@ -178,8 +178,13 @@ END:VCALENDAR`;
   return (
     <main>
       {/* PAGE HEADER */}
-      <section className="bg-charcoal text-cream py-24">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <section className="relative bg-charcoal text-cream py-32 overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-30"
+          style={{ backgroundImage: "url('/booking.jpg')" }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-charcoal via-charcoal/80 to-transparent" />
+        <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
           <p className="text-xs uppercase tracking-[0.3em] text-gold mb-4">
             Booking
           </p>

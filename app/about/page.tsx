@@ -42,24 +42,35 @@ export default function AboutPage() {
 
       {/* STORY */}
       <section className="bg-cream text-charcoal py-24">
-        <div className="mx-auto max-w-4xl px-6 lg:px-8">
-          <h2 className="text-4xl lg:text-5xl mb-8">The story.</h2>
-          <div className="space-y-6 text-lg leading-relaxed text-charcoal/80">
-            <p>
-              We opened on Oxford Road in 2018 with two chairs, one espresso
-              machine, and a simple promise: every client leaves sharper than
-              they arrived.
-            </p>
-            <p>
-              Seven years later, that promise hasn't changed. Our barbers are
-              trained, certified, and obsessed with the details — from the
-              first consultation to the final style.
-            </p>
-            <p>
-              Whether you're after a classic cut, a skin fade, or a full
-              gentleman's grooming session — you'll get the same standard of
-              craft every single visit.
-            </p>
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            {/* Image */}
+            <div
+              className="h-[500px] bg-cover bg-center"
+              style={{ backgroundImage: "url('/about.jpg')" }}
+            />
+
+            {/* Text */}
+            <div>
+              <h2 className="text-4xl lg:text-5xl mb-8">The story.</h2>
+              <div className="space-y-6 text-lg leading-relaxed text-charcoal/80">
+                <p>
+                  We opened on Oxford Road in 2018 with two chairs, one espresso
+                  machine, and a simple promise: every client leaves sharper than
+                  they arrived.
+                </p>
+                <p>
+                  Seven years later, that promise hasn't changed. Our barbers are
+                  trained, certified, and obsessed with the details — from the
+                  first consultation to the final style.
+                </p>
+                <p>
+                  Whether you're after a classic cut, a skin fade, or a full
+                  gentleman's grooming session — you'll get the same standard of
+                  craft every single visit.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
